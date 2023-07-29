@@ -65,6 +65,7 @@ Below are some other items to consider in the Detection & Analysis Phase:
 - Incident Identification and Prioritization
 - Incident Triage
 - Incident Validation/Investigation
+- Endpoint Forensics/Malware Analysis for Escalated Incidents 
 - Proactive Threat Hunting with other Network Anomalies or Indicators
 - Proper Incident Documenting/Reporting
 - Communication and Collaboration Methods
