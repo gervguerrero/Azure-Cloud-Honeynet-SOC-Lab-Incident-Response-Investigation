@@ -53,9 +53,9 @@ In a real life Incident Response, here are some other items to consider for the 
 
 ## Step 2: Detection & Analysis 
 
-The main goal of the Detection and Analysis phase is to validate the incident reported, determine the scope of impact, and to assign the severity level. This is heavily impacted by the amount of work done during the preperation phase, whether it's gathering accurate network architecture information from the network owners/adminsitrators, or making sure your network defender tools have been tested and are functional before deployment. 
+The main goal of the Detection and Analysis phase is to validate the incident reported, determine the scope of impact, and to assign the severity level. This is heavily impacted by the amount of work done during the preperation phase. 
 
-You want ensure in the Detection & Analysis phase that you and your team are investigating the incident with accurate data from the start, and with tools that are operational. Time is critical when investigating a high priority incident, and the security team needs to progress forward in this phase without backtracking due to inaccurate information or malfunctioning tools. Though these barriers can happen in this phase or any phase, they should be taken care of as much as possible in the Preparation phase for a smoother overall investigation for the Detection & Analysis phase.
+You want to ensure in the Detection & Analysis phase that the team is investigating the incident with accurate data from the start and with functioning tools. Time is critical when investigating a high priority incident, and the security team needs to progress forward in this phase without backtracking due to inaccurate information or malfunctioning tools. Though these barriers can happen in any phase, proper work in the Preparation phase leads for a smoother investigation for the Detection & Analysis phase.
 
 Below are some other items to consider in the Detection & Analysis Phase:  
 
