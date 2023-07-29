@@ -10,8 +10,9 @@ In Microsoft Azure, I built a public facing Honey Net to attract real world cybe
 This Incident Response process is a very basic demonstration of how a malicious cyber actor can brute force into an unprotected system that is left open, and how it is observed in Microsoft Sentinel and the Log Analytics Workspace in a Microsoft Azure Cloud environment. 
 
 <br/> 
+<br/> 
 
-## Vulnerable Network 
+# Vulnerable Network 
 ![uncsecure net map](https://github.com/gervguerrero/Azure-Cloud-SOC-Lab-Incident-Response/assets/140366635/97549972-f13c-445c-9719-38f30ecf44ae)
 
 The Azure cloud environment was left wide open without any real protection from cyber threat actors on the internet. The map shows  5 layers of defenses that were left open for threat actors to directly connect to the virtual machines and brute force/login into.
@@ -22,13 +23,15 @@ The Azure cloud environment was left wide open without any real protection from 
 4. Operating System Specific Firewalls to each virtual machine,
 5. and Firewall rules specific to the Blob Storage/Key Vault
 6. Private Endpoint Protection for Blob Storage/Key Vault
+   
+<br/> 
 
-## Start of the Incident Response Process 
+# Start of the Incident Response Process 
 ![IR](https://github.com/gervguerrero/Azure-Cloud-SOC-Lab-Incident-Response/assets/140366635/fdbc811a-f5bd-469b-9091-5dff69e0bf47)
 
 For this specific incident, NIST 800-61's Incident Response model was used. 
 
-**Step 1: Preparation**
+## Step 1: Preparation
 
 A majority of this step was covered in our Honeynet and SOC building period. The important part of this step in this environment was ingesting logs from our assets and importing them into our Log Analytics Workspace to be used by Microsoft Sentinel.
 Click here to see the process used for this project: (PLACEHOLDER)
