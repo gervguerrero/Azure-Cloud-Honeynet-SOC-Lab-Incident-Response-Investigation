@@ -96,3 +96,26 @@ SuccessfulLogons
 | join kind = inner FailedLogons on DestinationHostName, AttackerIP, LogonType
 | project AuthenticationSuccessTime, AttackerIP, DestinationHostName, FailureCount, SuccessfulCount
 ```
+<br/>
+<br/>
+
+Upon viewing the incident, we can set the incident an owner, a status, and a severity level in Microsoft Sentinel:
+![image](https://github.com/gervguerrero/Azure-Cloud-SOC-Lab-Incident-Response/assets/140366635/7fe84c65-3424-4583-935d-8084861c3daf)
+
+<br/>
+<br/>
+
+This is what the incident looks like when clicking on a single incident out of the list:
+![image](https://github.com/gervguerrero/Azure-Cloud-SOC-Lab-Incident-Response/assets/140366635/0e5acec3-a986-40da-9e5e-830dbfa2715e)
+
+<br/>
+<br/>
+
+Here we observe the Activity Log for the history of incident as it's administratively maintained:
+![image](https://github.com/gervguerrero/Azure-Cloud-SOC-Lab-Incident-Response/assets/140366635/e6164b21-cf60-451b-bacb-cca3c33492af)
+
+<br/>
+<br/>
+
+We can also see an Overview of this incident, the entities involved, and other incidents that Microsoft Sentinel relates as similar:
+![image](https://github.com/gervguerrero/Azure-Cloud-SOC-Lab-Incident-Response/assets/140366635/f4139b3d-54e8-42a8-aa51-7aead412759f)
