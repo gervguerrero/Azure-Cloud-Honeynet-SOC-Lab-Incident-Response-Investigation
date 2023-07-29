@@ -4,4 +4,4 @@ Builds off repository Azure-Cloud-SOC-Lab showcasing the Incident Response proce
 
 This page builds off of my [Azure-Cloud-SOC-Lab](https://github.com/gervguerrero/Azure-Cloud-SOC-Lab/tree/main). 
 
-In Microsoft Azure, I built a public facing Honey Net to attract real world cyber attackers to monitor their TTPs. Here I showcase basic methods to view the incidents caused by these threat actors in Microsoft Azure and implement controls to effectively emulate the incident response process from NIST 800-61 used by Security Operation Center (SOC) Teams. 
+In Microsoft Azure, I built a public facing Honey Net to attract real world cyber attackers to monitor their TTPs. Here I showcase basic methods to view the incidents caused by these threat actors in Microsoft Azure and implement controls to emulate the incident response process from NIST 800-61 used by Security Operation Center (SOC) Teams. 
