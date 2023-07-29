@@ -20,9 +20,8 @@ The Azure cloud environment was left wide open without any real protection from 
 1. Azure Firewall
 2. Network Service Group (NSG) covering the entire virtual network
 3. Network Service Group specific to each virtual machine
-4. Operating System Specific Firewalls to each virtual machine,
-5. and Firewall rules specific to the Blob Storage/Key Vault
-6. Private Endpoint Protection for Blob Storage/Key Vault
+4. Operating System specific firewalls to each virtual machine and firewall rules specific to the Blob Storage/Key Vault
+5. Private Endpoint Protection for Blob Storage/Key Vault
    
 <br/> 
 
