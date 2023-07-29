@@ -119,3 +119,19 @@ Here we observe the Activity Log for the history of incident as it's administrat
 
 We can also see an Overview of this incident, the entities involved, and other incidents that Microsoft Sentinel relates as similar:
 ![image](https://github.com/gervguerrero/Azure-Cloud-SOC-Lab-Incident-Response/assets/140366635/f4139b3d-54e8-42a8-aa51-7aead412759f)
+
+<br/>
+<br/>
+
+If the entities tab is expanded, we can explore details about the devices involved in this incident, both external and internal to the azure network affected:
+![image](https://github.com/gervguerrero/Azure-Cloud-SOC-Lab-Incident-Response/assets/140366635/f1a5ef4b-0d0d-4d39-bf17-2c12439f6aa9)
+![image](https://github.com/gervguerrero/Azure-Cloud-SOC-Lab-Incident-Response/assets/140366635/92bb6f4e-3504-4f32-add7-e4527e15040f)
+
+<br/>
+<br/>
+
+In the main incident page for the brute force, if we can click on the blue investigate button, we can see a high level overview map of the incident to determine the scope of impact:
+![image](https://github.com/gervguerrero/Azure-Cloud-SOC-Lab-Incident-Response/assets/140366635/9487238a-84f1-426c-88b7-824d83371d9e)
+![image](https://github.com/gervguerrero/Azure-Cloud-SOC-Lab-Incident-Response/assets/140366635/b676afa5-b316-49b1-9095-87b166e1c135)
+
+
