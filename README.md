@@ -45,7 +45,7 @@ In a real life Incident Response, here are some other items to consider for the 
 - Scoping Document/Questionnaire covering Pattern of Life/Baseline for the Network (When/How are backups performed? How many Administrators does the network Have?)
 - Authorized Software List, Users List
 - Identification of Crticial Assets to the Network Owners
-- Developing Security Sensor Strategy, what kind of Security Tools to use, how the data wil be collected for analysis by the Security Team 
+- Developing Security Sensor Strategy, what kind of Security Tools to use, how the data will be collected for analysis by the Security Team 
 - Threat Intelligence published to the Information Security Community (APTs, widely known CVEs, information that might be relevant to the network if it is specific like Hospitals, Bank, Schools, etc.)
 - All Data surrounding or related to the Initial Event found that led to an escalated Incident. 
 
