@@ -78,4 +78,21 @@ Below is the Microsoft Sentinel Incidents page and the KQL (Kusto Query Language
 
 ![image](https://github.com/gervguerrero/Azure-Cloud-SOC-Lab-Incident-Response/assets/140366635/5300957f-3357-4488-94ac-3c666a3344b6)
 
+This is the KQL query that triggered the alert:
+![image](https://github.com/gervguerrero/Azure-Cloud-SOC-Lab-Incident-Response/assets/140366635/10b72a06-3ff0-41c6-a7be-742b1acf5402)
 
+```
+// Brute Force Success Windows
+let FailedLogons = SecurityEvent
+| where EventID == 4625 and LogonType == 3
+| where TimeGenerated > ago(1h)
+| summarize FailureCount = count() by AttackerIP = IpAddress, EventID, Activity, LogonType, DestinationHostName = Computer
+| where FailureCount >= 5;
+let SuccessfulLogons = SecurityEvent
+| where EventID == 4624 and LogonType == 3
+| where TimeGenerated > ago(1h)
+| summarize SuccessfulCount = count() by AttackerIP = IpAddress, LogonType, DestinationHostName = Computer, AuthenticationSuccessTime = TimeGenerated;
+SuccessfulLogons
+| join kind = inner FailedLogons on DestinationHostName, AttackerIP, LogonType
+| project AuthenticationSuccessTime, AttackerIP, DestinationHostName, FailureCount, SuccessfulCount
+```
