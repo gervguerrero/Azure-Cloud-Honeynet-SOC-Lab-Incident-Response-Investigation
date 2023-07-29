@@ -44,14 +44,16 @@ In a real life Incident Response, here are some other items to consider for the 
 - Scoping Document/Questionnaire covering Pattern of Life/Baseline for the Network (When/How are backups performed? How many Administrators does the network Have?)
 - Authorized Software List, Users List
 - Identification of Crticial Assets to the Network Owners
-- Developing Security Sensor Strategy, what kind of Security Tools to use, how the data will be collected for analysis by the Security Team 
+- Developing Security Sensor Strategy, what kind of Security Tools to use, how the data will be collected for analysis by the Security Team
+- Testing SIEM, Log Collection, EDR tools prior to deployment
+- Reviewing data retention plan and ensuring sufficient storage for data collection 
 - Threat Intelligence published to the Information Security Community (APTs, widely known CVEs, information that might be relevant to the network if it is specific like Hospitals, Bank, Schools, etc.)
 - All Data surrounding or related to the Initial Event found that led to an escalated Incident. 
 
 
 ## Step 2: Detection & Analysis 
 
-The main goal of the Detection and Analysis phase is to validate the incident reported and to determine the scope and severity. This is heavily impacted by the amount of work done during the preperation phase, whether it's gathering accurate network architecture information from the network owners/adminsitrators, or making sure your network defender tools have been tested and are functional before deployment. 
+The main goal of the Detection and Analysis phase is to validate the incident reported and to determine the scope and severity. This is heavily impacted by the amount of work done during the preperation phase, whether it's gathering accurate network architecture information from the network owners/adminsitrators, or making sure your network defender tools have been tested and are functional before deployment. You want ensure in the Dection & Analysis phase that you and your team are investigating the incident with accurate data from the start, and with tools that are operational. Time is critical when investigating a high priority incident, and the security team needs to progress forward in this phase without backtracking due to inaccurate information or malfunctioning tools. Though these barriers can happen in this phase or any phase, they should be taken care of as much as possible in Step 1: Prepartion 
 
 Below are some other items to consider in the Detection & Analysis Phase:  
 
