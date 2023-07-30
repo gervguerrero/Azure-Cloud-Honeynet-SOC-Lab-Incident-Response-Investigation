@@ -237,7 +237,9 @@ Focusing on NIST's 800-53 R5 SC-7 Boundary Protection, the security controls imp
 4. Operating System specific firewalls to each virtual machine and firewall rules specific to the Blob Storage/Key Vault
 5. Private Endpoint Protection for Blob Storage/Key Vault 
 
-For the sake of keeping this page at an acceptable size, click here to observe the detailed hardening process on the Azure network with firewall protection: (PLACEHOLDER) 
+**For the sake of keeping this page at an acceptable size, click here to observe the detailed hardening process on the Azure network with firewall protection**: 
+
+[Azure-Cloud-Honeynet-SOC-Lab-Firewall-Hardening](https://github.com/gervguerrero/Azure-Cloud-Honeynet-SOC-Lab-Firewall-Hardening)
 
 Here are the before and after hardening Azure network maps for a visual aid:
 ![Unsecured Network](https://github.com/gervguerrero/Azure-Cloud-Honeynet-SOC-Lab-Incident-Response-Investigation/assets/140366635/7a946412-7d5f-4f04-9dbe-416a6daff5db)
@@ -259,4 +261,10 @@ After implementing and observing successful security controls, the post incident
 <br/>
 <br/>
 
-To see the effects of implementing these security controls on the Azure network and an overview of the Honeynet/SOC lab project, please read my page [Azure-Cloud-Honeynet-SOC-Lab](https://github.com/gervguerrero/Azure-Cloud-Honeynet-SOC-Lab/tree/main).
+**To see the technical process of implementing firewall security controls on the Azure network, see:**
+
+[Azure-Cloud-Honeynet-SOC-Lab-Firewall-Hardening](https://github.com/gervguerrero/Azure-Cloud-Honeynet-SOC-Lab-Firewall-Hardening)
+
+**To see the effects of implementing these security controls on the Azure network and an overview of the Honeynet/SOC lab project, see:**
+
+[Azure-Cloud-Honeynet-SOC-Lab](https://github.com/gervguerrero/Azure-Cloud-Honeynet-SOC-Lab/tree/main).
