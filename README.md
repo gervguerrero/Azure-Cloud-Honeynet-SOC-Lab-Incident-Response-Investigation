@@ -1,4 +1,4 @@
-# Azure-Cloud-SOC-Lab-Incident-Response-t
+# Azure-Cloud-SOC-Lab-Incident-Response-Investigation
 
 Builds off repository Azure-Cloud-SOC-Lab showcasing the Incident Response process Microsoft Sentinel  
 ![final map](https://github.com/gervguerrero/Azure-Cloud-SOC-Lab-Incident-Response/assets/140366635/c1ef655b-4ebf-4b86-b7d7-3060246645a6)
