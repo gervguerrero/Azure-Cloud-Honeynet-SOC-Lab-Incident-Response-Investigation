@@ -134,4 +134,87 @@ In the main incident page for the brute force, if we can click on the blue inves
 ![image](https://github.com/gervguerrero/Azure-Cloud-SOC-Lab-Incident-Response/assets/140366635/9487238a-84f1-426c-88b7-824d83371d9e)
 ![image](https://github.com/gervguerrero/Azure-Cloud-SOC-Lab-Incident-Response/assets/140366635/b676afa5-b316-49b1-9095-87b166e1c135)
 
+<br/>
+<br/>
+
+In this map, we can inspect the entities and see if there are any related events to an entity:
+
+![image](https://github.com/gervguerrero/Azure-Cloud-SOC-Lab-Incident-Response/assets/140366635/ad71ae35-d09c-4795-aeea-833b0b9040bf)
+
+![image](https://github.com/gervguerrero/Azure-Cloud-SOC-Lab-Incident-Response/assets/140366635/b5d0fc8b-a17a-4453-bf45-24d5ab81cf0f)
+
+<br/>
+<br/>
+
+We can see a brute force attempt that this external IP performed as well and how it relates to the overall incident. (This was the attempt prior to the successful login.) 
+![image](https://github.com/gervguerrero/Azure-Cloud-SOC-Lab-Incident-Response/assets/140366635/7b3a5149-a6ce-4551-b0c7-06eb6fb3a036)
+
+<br/>
+<br/>
+
+The other related events:
+![image](https://github.com/gervguerrero/Azure-Cloud-SOC-Lab-Incident-Response/assets/140366635/0e413c44-50c5-4f87-86db-db1292d73a05)
+![image](https://github.com/gervguerrero/Azure-Cloud-SOC-Lab-Incident-Response/assets/140366635/e84ef84a-922f-456c-a71a-c29ce2367177)
+
+<br/>
+<br/>
+
+The overall map with other events from the external IP expanded:
+![image](https://github.com/gervguerrero/Azure-Cloud-SOC-Lab-Incident-Response/assets/140366635/56fa1a1f-b6dc-42f2-830d-6ec8ada16d89)
+![image](https://github.com/gervguerrero/Azure-Cloud-SOC-Lab-Incident-Response/assets/140366635/05676c2f-eae6-42f6-976c-9f25ad577542)
+
+<br/>
+<br/>
+
+If we expand the related events from the victim entity the Windows 10 virtual machine, we can see this machine is involved in several incidents:
+![image](https://github.com/gervguerrero/Azure-Cloud-SOC-Lab-Incident-Response/assets/140366635/cec2f243-00ea-4f52-904f-36995079cd15)
+![image](https://github.com/gervguerrero/Azure-Cloud-SOC-Lab-Incident-Response/assets/140366635/8b42cb07-be3a-4afb-9a33-7660d6244e44)
+
+<br/>
+<br/>
+
+After getting a good understanding in the incident page, we need to determine legitimacy of the incident and label it as either a True Positive, False Positive. To do this we view the Logs that generated this alert in the Log Analytics workspace by using the KQL query listed earlier above:
+![image](https://github.com/gervguerrero/Azure-Cloud-SOC-Lab-Incident-Response/assets/140366635/23e6cfcd-419b-4b17-91d4-981fbf100514)
+
+<br/>
+<br/>
+
+Expanding these logs returned by this query reveal the IP seen in the Incident page and map and it's details on it's brute successful brute force:
+
+![image](https://github.com/gervguerrero/Azure-Cloud-SOC-Lab-Incident-Response/assets/140366635/6a7b4e4c-3e46-4e3f-a066-7fecbe439a5b)
+![image](https://github.com/gervguerrero/Azure-Cloud-SOC-Lab-Incident-Response/assets/140366635/147f4d87-11c8-4540-93cf-c06d608cebbe)
+
+<br/>
+<br/>
+
+We can get a little bit specific to validate the incident and see who else logged in recently as successful to this virtual machine. (Note that this KQL query is very simple and we are collecting Windows Event logs from only 1 VM in this project.)
+![image](https://github.com/gervguerrero/Azure-Cloud-SOC-Lab-Incident-Response/assets/140366635/5ee62c39-cb39-4642-8097-abbc9607b60b)
+
+At this point we can confirm that the Brute Force Success was a True Positive. The security would then perform proactive threat hunting to any other machines related to the victim or servers that it commonly authenticates with. With validating the incident, we move into the next phase of the incident reponse process:
+
+
+
+From here, depending on how the security team would operate, a digital forensics investigation would take place with the virtual machine affected, which itself is a very detailed process that is not covered in this exercise.
+
+Though we can quickly list out key areas of forensic investigation for responding to an incident in a Windows operating system:
+
+
+**System & User Information**
+- Registry
+- File Analysis
+- NTFS
+
+**Evidence of Malware Execution**
+- Background Activity Moderator: Information about executables
+- ShimCache: Information about executables and backwards compatibility 
+- AmCache: Information related to windows apps experience and compatibility 
+- Prefetch: Information about applications that executed 
+
+
+**Persistence Mechanisms**
+- Run Keys
+- Startup Folder
+- Scheduled Tasks
+- Services
+
 
