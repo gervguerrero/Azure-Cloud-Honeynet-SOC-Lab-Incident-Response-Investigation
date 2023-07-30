@@ -243,4 +243,15 @@ Here are the before and after hardening Azure network maps for a visual aid:
 ![Unsecured Network](https://github.com/gervguerrero/Azure-Cloud-Honeynet-SOC-Lab-Incident-Response-Investigation/assets/140366635/7a946412-7d5f-4f04-9dbe-416a6daff5db)
 ![Secured Network Azure firewall](https://github.com/gervguerrero/Azure-Cloud-Honeynet-SOC-Lab-Incident-Response-Investigation/assets/140366635/2abaae70-59f4-4b9f-8abb-2f885b8ba99f)
 
+## Step 4: Post-Incident Activity
 
+After implementing and observing successful security controls, the post incident activity focuses on reviewing of the incident, how it was corrected, and everything in between to make it better next time. Here are some key areas that take place during this phase:
+
+**Incident Review**
+- Understanding the incident's entire lifecycle, from detection to containment, eradication, and recovery. The team examines the effectiveness of the response actions taken, identifies any gaps or weaknesses in the incident response process, and evaluates the incident's impact on the organization.
+
+**Documentation**
+- Documenting the incident's timeline, forensic evidence, response actions, problems encountered, and any other information surrounding the incident is critical. Having the information and having it in an orderly fashion allows the team to analyze the overall incident response process and review it's shortcomings. Lack of documentation may lead to the incident occuring once again if nobody ever keeps a historical record of the vent. Proper documentation will be needed when presenting to executives, key stakeholders, and legal administration. 
+  
+**Lessons Learned/Improvement Plan**
+- To tie it all together, the team concludes with what the shortcomings were in the incident response process, and what measures can be taken to stregthen the network posture from outside a technicality level. Improving the security response plan, updating playbooks, conducting more proactive security assessments, and educating end users with an effective cybersecurity program are all methods to help prevent the incident from happening again. 
