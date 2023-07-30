@@ -194,7 +194,7 @@ At this point we can confirm that the Brute Force Success was a True Positive. T
 
 ## Step 3: Containment, Eradication, and Recovery
 ### Containment
-From here, depending on how the security team operates, the computer being investigated would be isolated to contain any immediate threats, and a thorough digital forensics investigation would take place to fully understand the complete impact of this attack. The forensics investigation is a very detailed process that would require it's own page to explain and is not covered in this exercise. 
+From here, depending on how the security team operates, the computer being investigated would be isolated to contain any immediate threats, and a thorough digital forensics investigation would take place to fully understand the complete impact of this attack. The forensics investigation is a very detailed process that would require its own page to explain and is not covered in this exercise. 
 
 Though we can quickly list out key areas of forensic investigation for responding to an incident in a Windows operating system:
 
@@ -225,7 +225,7 @@ Now that we know what needs to be corrected, we can start fixing it.
 
 ### Eradication and Recovery
 
-To harden our network against ONLY an unauthroized brute force login, we need to:
+To harden our network against ONLY an unauthorized brute force login, we need to:
 - Change the password to a more complex one meeting security requirements.
 - Implement network controls to disable access to unauthorized parties. (Implement Firewall Controls)
 - Capture logging to monitor and observe if security controls are successful.
@@ -245,13 +245,13 @@ Here are the before and after hardening Azure network maps for a visual aid:
 
 ## Step 4: Post-Incident Activity
 
-After implementing and observing successful security controls, the post incident activity focuses on reviewing of the incident, how it was corrected, and everything in between to make it better next time. Here are some key areas that take place during this phase:
+After implementing and observing successful security controls, the post incident activity focuses on reviewing the incident, how it was corrected, and everything in between to make it better next time. Here are some key areas that take place during this phase:
 
 **Incident Review**
 - Understanding the incident's entire lifecycle, from detection to containment, eradication, and recovery. The team examines the effectiveness of the response actions taken, identifies any gaps or weaknesses in the incident response process, and evaluates the incident's impact on the organization.
 
 **Documentation**
-- Documenting the incident's timeline, forensic evidence, response actions, problems encountered, and any other information surrounding the incident is critical. Having the information and having it in an orderly fashion allows the team to analyze the overall incident response process and review it's shortcomings. Lack of documentation may lead to the incident occuring once again if nobody ever keeps a historical record of the vent. Proper documentation will be needed when presenting to executives, key stakeholders, and legal administration. 
+- Documenting the incident's timeline, forensic evidence, response actions, problems encountered, and any other information surrounding the incident is critical. Having the information and having it in an orderly fashion allows the team to analyze the overall incident response process and review its shortcomings. Lack of documentation may lead to the incident occurring once again if nobody ever keeps a historical record of the vent. Proper documentation will be needed when presenting to executives, key stakeholders, and legal administration. 
   
 **Lessons Learned/Improvement Plan**
-- To tie it all together, the team concludes with what the shortcomings were in the incident response process, and what measures can be taken to stregthen the network posture from outside a technicality level. Improving the security response plan, updating playbooks, conducting more proactive security assessments, and educating end users with an effective cybersecurity program are all methods to help prevent the incident from happening again. 
+- To tie it all together, the team concludes with what the shortcomings were in the incident response process, and what measures can be taken to strengthen the network posture from outside a technicality level. Improving the security response plan, updating playbooks, conducting more proactive security assessments, and educating end users with an effective cybersecurity program are all methods to help prevent the incident from happening again. 
