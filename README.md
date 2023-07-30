@@ -190,11 +190,11 @@ Expanding these logs returned by this query reveal the IP seen in the Incident p
 We can get a little bit specific to validate the incident and see who else logged in recently as successful to this virtual machine. (Note that this KQL query is very simple and we are collecting Windows Event logs from only 1 VM in this project.)
 ![image](https://github.com/gervguerrero/Azure-Cloud-SOC-Lab-Incident-Response/assets/140366635/5ee62c39-cb39-4642-8097-abbc9607b60b)
 
-At this point we can confirm that the Brute Force Success was a True Positive. The security would then perform proactive threat hunting to any other machines related to the victim or servers that it commonly authenticates with. With validating the incident, we move into the next phase of the incident reponse process:
+At this point we can confirm that the Brute Force Success was a True Positive. The security team would then perform proactive threat hunting to any other machines related to the victim or servers that it commonly authenticates with. With validating the incident, we move into the next phase of the incident reponse process.
 
-
-
-From here, depending on how the security team would operate, a digital forensics investigation would take place with the virtual machine affected, which itself is a very detailed process that is not covered in this exercise.
+## Step 3: Containment, Eradication, and Recovery
+### Containment
+From here, depending on how the security team operates, the computer being investigated would be isolated to contain any immediate threats, and a thorough digital forensics investigation would take place to fully understand the complete impact of this attack. The forensics investigation is a very detailed process that would require it's own page to explain and is not covered in this exercise. 
 
 Though we can quickly list out key areas of forensic investigation for responding to an incident in a Windows operating system:
 
@@ -205,10 +205,10 @@ Though we can quickly list out key areas of forensic investigation for respondin
 - NTFS
 
 **Evidence of Malware Execution**
-- Background Activity Moderator: Information about executables
-- ShimCache: Information about executables and backwards compatibility 
-- AmCache: Information related to windows apps experience and compatibility 
-- Prefetch: Information about applications that executed 
+- Background Activity Moderator (Information about executables)
+- ShimCache (Information about executables and backwards compatibility) 
+- AmCache (Information related to windows apps experience and compatibility) 
+- Prefetch (Information about applications that executed) 
 
 
 **Persistence Mechanisms**
@@ -216,5 +216,31 @@ Though we can quickly list out key areas of forensic investigation for respondin
 - Startup Folder
 - Scheduled Tasks
 - Services
+
+Upon a full investigation and understanding what needs to be fixed, the eradication and recovery steps begin.
+
+In this simple exercise, the only malicious event was a successful brute force login from an unauthorized external IP. No persistence mechanisms or elaborate vulnerabilities were exploited.
+
+Now that we know what needs to be corrected, we can start fixing it.
+
+### Eradication and Recovery
+
+To harden our network against ONLY an unauthroized brute force login, we need to:
+- Change the password to a more complex one meeting security requirements.
+- Implement network controls to disable access to unauthorized parties. (Implement Firewall Controls)
+- Capture logging to monitor and observe if security controls are successful.
+
+Focusing on NIST's 800-53 R5 SC-7 Boundary Protection, the security controls implemented were 5 layers of defense in the Azure network:
+1. Azure Firewall
+2. Network Service Group (NSG) covering the entire virtual network
+3. Network Service Group specific to each virtual machine
+4. Operating System specific firewalls to each virtual machine and firewall rules specific to the Blob Storage/Key Vault
+5. Private Endpoint Protection for Blob Storage/Key Vault 
+
+For the sake of keeping this page at an acceptable size, click here to observe the detailed hardening process on the Azure network with firewall protection: (PLACEHOLDER) 
+
+Here are the before and after hardening Azure network maps for a visual aid:
+![Unsecured Network](https://github.com/gervguerrero/Azure-Cloud-Honeynet-SOC-Lab-Incident-Response-Investigation/assets/140366635/7a946412-7d5f-4f04-9dbe-416a6daff5db)
+![Secured Network Azure firewall](https://github.com/gervguerrero/Azure-Cloud-Honeynet-SOC-Lab-Incident-Response-Investigation/assets/140366635/2abaae70-59f4-4b9f-8abb-2f885b8ba99f)
 
 
