@@ -1,6 +1,6 @@
 # Azure-Cloud-SOC-Lab-Incident-Response-Investigation
 
-This builds off my repository [Azure-Cloud-Honeynet-SOC-Lab](https://github.com/gervguerrero/Azure-Cloud-SOC-Lab/tree/main) showcasing the Incident Response process using Microsoft Sentinel.  
+This builds off my repository [Azure-Cloud-Honeynet-SOC-Lab](https://github.com/gervguerrero/Azure-Cloud-SOC-Lab/tree/main). This page showcases the Incident Response process using Microsoft Sentinel.  
 
 ![final map](https://github.com/gervguerrero/Azure-Cloud-SOC-Lab-Incident-Response/assets/140366635/c1ef655b-4ebf-4b86-b7d7-3060246645a6)
 
