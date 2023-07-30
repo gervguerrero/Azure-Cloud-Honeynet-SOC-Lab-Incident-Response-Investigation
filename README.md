@@ -1,6 +1,6 @@
 # Azure-Cloud-SOC-Lab-Incident-Response-Investigation
 
-This builds off my repository [Azure-Cloud-Honeynet-SOC-Lab](https://github.com/gervguerrero/Azure-Cloud-SOC-Lab/tree/main). This page showcases the Incident Response process using Microsoft Sentinel.  
+This page showcases the Incident Response process using Microsoft Sentinel building off my repository [Azure-Cloud-Honeynet-SOC-Lab](https://github.com/gervguerrero/Azure-Cloud-SOC-Lab/tree/main).
 
 ![final map](https://github.com/gervguerrero/Azure-Cloud-SOC-Lab-Incident-Response/assets/140366635/c1ef655b-4ebf-4b86-b7d7-3060246645a6)
 
@@ -259,4 +259,4 @@ After implementing and observing successful security controls, the post incident
 <br/>
 <br/>
 
-To see the effects of implementing these security controls on the Azure network and an overview of the Honeynet/SOC lab project, please read my page [Azure-Cloud-Honeynet-SOC-Lab](https://github.com/gervguerrero/Azure-Cloud-Honeynet-SOC-Lab/tree/main)
+To see the effects of implementing these security controls on the Azure network and an overview of the Honeynet/SOC lab project, please read my page [Azure-Cloud-Honeynet-SOC-Lab](https://github.com/gervguerrero/Azure-Cloud-Honeynet-SOC-Lab/tree/main).
